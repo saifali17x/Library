@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Library</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="library-container">
+
+        <div class="book-card">
+            <img src="https://covers.openlibrary.org/b/id/8228691-L.jpg" alt="Book Cover" class="book-cover" />
+            <h2 class="book-title">To Kill a Mockingbird</h2>
+            <p class="book-author">Author: Harper Lee</p>
+            <p class="book-pages">Pages: 281</p>
+            <p class="book-read">Read: Yes</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://covers.openlibrary.org/b/id/10958388-L.jpg" alt="Book Cover" class="book-cover" />
+            <h2 class="book-title">The Brothers Karamazov</h2>
+            <p class="book-author">Author: Fyodor Dostoevsky</p>
+            <p class="book-pages">Pages: 796</p>
+            <p class="book-read">Read: No</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://covers.openlibrary.org/b/id/10594766-L.jpg" alt="Book Cover" class="book-cover" />
+            <h2 class="book-title">The Great Gatsby</h2>
+            <p class="book-author">Author: F. Scott Fitzgerald</p>
+            <p class="book-pages">Pages: 180</p>
+            <p class="book-read">Read: Yes</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://covers.openlibrary.org/b/id/10105174-L.jpg" alt="Book Cover" class="book-cover" />
+            <h2 class="book-title">Pride and Prejudice</h2>
+            <p class="book-author">Author: Jane Austen</p>
+            <p class="book-pages">Pages: 279</p>
+            <p class="book-read">Read: No</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://covers.openlibrary.org/b/id/10914232-L.jpg" alt="Book Cover" class="book-cover" />
+            <h2 class="book-title">Beyond Good and Evil</h2>
+            <p class="book-author">Author: Friedrich Nietzsche</p>
+            <p class="book-pages">Pages: 240</p>
+            <p class="book-read">Read: Yes</p>
+        </div>
+
+
+        <button id="add-book-btn">+ Add New Book</button>
+    </div>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="close-modal" class="close-btn">&times;</span>
+            <h2>Add a New Book</h2>
+            <form id="book-form">
+                <input type="text" name="title" placeholder="Book Title" required />
+                <input type="text" name="author" placeholder="Author" required />
+                <input type="number" name="pages" placeholder="Pages" required />
+                <input type="url" name="cover" placeholder="Cover Image URL" required />
+                <label><input type="checkbox" name="read" /> Read</label>
+                <button type="submit">Add Book</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

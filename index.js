@@ -1,12 +1,14 @@
 const myLibrary = [];
 
-function Book(title, author, pages, read = false, cover) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.read = read;
-  this.cover = cover;
-  this.id = crypto.randomUUID();
+class Book {
+  constructor(title, author, pages, read = false, cover) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+    this.cover = cover;
+    this.id = crypto.randomUUID();
+  }
 }
 
 document.querySelector("#add-book-btn").addEventListener("click", () => {
